@@ -1,0 +1,428 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    height: 300vh;
+    margin: 0;
+    background-color: white;
+    overflow: auto;
+}
+
+header {
+    background-color: pink;
+}
+
+.principall {
+    display: flex;
+
+}
+
+/* albaricoque */
+
+.sociales_redes {
+    position: fixed;
+    width: 10vw;
+    height: 100vh;
+    background-color: rgba(212, 212, 212, 0);
+}
+
+#img_logo {
+    display: flex;
+    width: 10vw;
+    height: auto;
+    transition: 0.3s;
+}
+
+#img_logo:hover {
+    filter: drop-shadow(0px 0px 10px #dfff77);
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 3vh;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#hya {
+    text-decoration: none;
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: 0.2s;
+}
+
+#hya:hover {
+    background-color: rgba(0, 0, 0, 0.568);
+    color: white;
+    transition: 0.2s;
+    padding: 2%;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    margin-top: 8vh;
+}
+
+.card {
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 10px;
+    gap: 20px;
+    box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.418);
+    position: sticky;
+    top: 0;
+}
+  
+/* for all social containers*/
+.socialContainer {
+    width: 52px;
+    height: 52px;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
+}
+
+/* instagram*/
+  .containerOne:hover {
+    background-color: #d62976;
+    transition-duration: .3s;
+}
+
+/* twitter*/
+.containerTwo:hover {
+    background-color: #00acee;
+    transition-duration: .3s;
+}
+
+
+
+/* Whatsapp*/
+.containerFour:hover {
+    background-color: #128C7E;
+    transition-duration: .3s;
+}
+  
+.socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
+}
+  
+.socialSvg {
+    width: 17px;
+}
+  
+.socialSvg path {
+    fill: rgb(255, 255, 255);
+}
+  
+.socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+}
+  
+@keyframes slide-in-top {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+
+/* fin del albaricoque */
+
+
+
+.contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90vw;
+    background-color: rgba(247, 255, 140, 0);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-left: 20vw;
+}
+
+#imgc1 {
+    display: flex;
+    margin-top: 5vh;
+    width: 45vw;
+    height: auto;
+}
+
+#Sstudi:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
+/* carta1 */
+
+
+.cart1 {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.immg {
+    margin-top: 20vh;
+    padding-left: 10vw;
+}
+
+.texto {
+    margin-top: 20vh;
+    padding: 2%;
+}
+
+#img_cart1 {
+    display: flex;
+    width: 40vw;
+    height: auto;
+    padding-left: 5vw;
+}
+
+/* fin de carta1 */
+
+
+
+/* carta2 */
+
+
+.cart2 {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.immg2 {
+    margin-top: 20vh;
+    width: 30vw;
+}
+
+.texto2 {
+    margin-top: 20vh;
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    background-color: #128c7e00;
+}
+
+#texleft {
+    padding-left: 15%;
+    margin-left: 20%;
+    transition: 0.3s;
+}
+
+#ppf 
+
+
+#img_cart2 {
+    display: flex;
+    width: 40vw;
+    height: auto;
+    padding-left: 5vw;
+}
+
+#ppdf {
+    font-size: 2vw;
+}
+
+
+.cart3 {
+    margin-top: 20vh;
+}
+
+
+.gift {
+    display: flex;
+    justify-content: center;
+}
+
+.texto3 {
+    display: flex;
+    justify-content: center;
+    padding-left: 10vw;
+    font-size: 1.7vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+#imagen_gift {
+    display: flex;
+    width: 70vw;
+    height: auto;
+    padding-left: 10vw;
+}
+
+
+
+
+.cart4 {
+    margin-top: 20vh;
+}
+
+.img4 {
+    display: flex;
+    justify-content: center;
+    padding-left: 10vw;
+}
+
+#img4 {
+    display: flex;
+    width: 80vw;
+    height: auto;
+}
+
+.texto4 {
+    display: flex;
+    justify-content: center;
+    padding-left: 10vw;
+    margin-top: 5vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.7vw;
+}
+
+
+
+
+
+
+/* pollo campero */
+
+.foo {
+    margin-top: -60vh;
+    padding-left: 10vw;
+}
+
+
+.para_for {
+    height: 50vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+  
+#image1 {
+    background-image: url('foootos/CbNuH0D2.jpg'); 
+}
+  
+#image2 {
+    background-image: url('foootos/momo.jpg'); 
+}
+  
+#image3 {
+    background-image: url('foootos/foto.png');
+}
+
+#cont1 {
+    box-shadow: 0px 8px 10px;
+}
+
+#cont2 {
+    box-shadow: 0px 8px 10px;
+}
+  
+.cepillin_con1 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cepillin_con2 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* mo omom */
+
+
+
+.crcrt {
+    margin-top: 30vh;
+}
+
+.img_long {
+    padding-left: 10vw;
+    display: flex;
+}
+
+#immmg {
+    display: flex;
+    width: 88vw;
+    height: auto;
+}
+
+
+
+.tex_long {
+    display: flex;
+    justify-content: center;
+    padding-left: 10vw;
+    margin-top: 3vh;
+}
+
+
+#ppp {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.7vw;
+}
+
+
+
+footer {
+    margin-top: 20vh;
+    margin: 1%;
+    margin-left: 10vw;
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+    background-color: rgb(124, 124, 124);
+    text-align: center;
+}
+
+#h1footer {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3vw;
+    color: white;
+}
+
+.img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#imgdo {
+    display: flex;
+    width: 10vw;
+    height: auto;
+}
+
+#pfooter {
+    color: white;
+}
